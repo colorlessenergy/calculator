@@ -3,3 +3,72 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #222222;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+button {
+    border: 0;
+
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.container {
+    margin: 20px;
+}
+
+.output {
+    border-radius: 10px;
+    padding: 20px;
+
+    background-color: #333333;
+}
+
+.operations {
+    margin: 15px 0;
+}
+
+.operation {
+    border-radius: 50%;
+    margin-right: 10px;
+    min-height: 40px;
+    min-width: 40px;
+
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.operation-add {
+    background-color: #583ff3;
+}
+
+.operation-subtract {
+    background-color: #f33f3f;
+}
+
+.operation-multiply {
+    background-color: #38aa10;
+}
+
+.operation-divide {
+    background-color: #f2bd02;
+}
+
+.number {
+    height: 60px;
+    width: calc(33.33% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    background-color: #ffffff;
+    font-size: 24px;
+}
+
+.number-clear {
+    background-color: #333333;
+    color: #ff0000;
+}
