@@ -1,6 +1,11 @@
+import { useState } from 'react';
 import Head from 'next/head';
 
+import Numbers from './components/Numbers';
+
 export default function Home() {
+    const [output, setOutput] = useState('');
+
     return (
         <>
             <Head>
@@ -13,7 +18,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="container">
-                <div className="output">100</div>
+                <div className="output">{output}</div>
 
                 <div className="operations">
                     <button className="operation operation-add">+</button>
@@ -22,20 +27,7 @@ export default function Home() {
                     <button className="operation operation-divide">/</button>
                 </div>
 
-                <div>
-                    <button className="number">1</button>
-                    <button className="number">2</button>
-                    <button className="number">3</button>
-                    <button className="number">4</button>
-                    <button className="number">5</button>
-                    <button className="number">6</button>
-                    <button className="number">7</button>
-                    <button className="number">8</button>
-                    <button className="number">9</button>
-                    <button className="number number-clear">c</button>
-                    <button className="number">0</button>
-                    <button className="number">=</button>
-                </div>
+                <Numbers setOutput={setOutput} />
             </div>
         </>
     );

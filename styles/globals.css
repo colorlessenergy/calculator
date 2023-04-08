@@ -23,6 +23,7 @@ button {
 
 .output {
     border-radius: 10px;
+    height: 72px;
     padding: 20px;
 
     background-color: #333333;
