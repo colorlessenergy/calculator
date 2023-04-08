@@ -8,6 +8,12 @@ export default function Numbers({ setOutput }) {
             return setOutput('');
         }
 
+        if (event.target.textContent === '=') {
+            return setOutput(previousOutput =>
+                eval(previousOutput.replaceAll('x', '*'))
+            );
+        }
+
         setOutput(previousOutput => previousOutput + event.target.textContent);
     };
 
