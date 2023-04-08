@@ -73,3 +73,10 @@ button {
     background-color: #333333;
     color: #ff0000;
 }
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+    }
+}
