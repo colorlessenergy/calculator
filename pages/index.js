@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 
+import Operations from './components/Operations';
 import Numbers from './components/Numbers';
 
 export default function Home() {
@@ -20,12 +21,7 @@ export default function Home() {
             <div className="container">
                 <div className="output">{output}</div>
 
-                <div className="operations">
-                    <button className="operation operation-add">+</button>
-                    <button className="operation operation-subtract">-</button>
-                    <button className="operation operation-multiply">x</button>
-                    <button className="operation operation-divide">/</button>
-                </div>
+                <Operations output={output} setOutput={setOutput} />
 
                 <Numbers setOutput={setOutput} />
             </div>
